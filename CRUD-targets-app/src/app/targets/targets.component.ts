@@ -12,6 +12,12 @@ export class TargetsComponent implements OnInit {
   targets: Target[];
   selectedTarget: Target;
 
+  constructor(private targetService: TargetService) {}
+
+  ngOnInit() {
+    this.getTargets();
+  }
+
   onSelect(target: Target): void {
     this.selectedTarget = target;
   }
@@ -20,11 +26,5 @@ export class TargetsComponent implements OnInit {
     this.targetService
       .getTargets()
       .subscribe(targets => (this.targets = targets));
-  }
-
-  constructor(private targetService: TargetService) {}
-
-  ngOnInit() {
-    this.getTargets();
   }
 }

@@ -5,9 +5,10 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { TargetsComponent } from "./targets/targets.component";
 import { TargetDetailComponent } from "./target-detail/target-detail.component";
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
-  declarations: [AppComponent, TargetsComponent, TargetDetailComponent],
+  declarations: [AppComponent, TargetsComponent, TargetDetailComponent, MessagesComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
