@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core";
 import { Target } from "./target";
 import { TARGETS } from "./mock-company-data";
+import { Observable, of } from "rxjs";
 
 @Injectable({
   providedIn: "root"
@@ -8,7 +9,7 @@ import { TARGETS } from "./mock-company-data";
 export class TargetService {
   constructor() {}
 
-  getTargets(): Target[] {
-    return TARGETS;
+  getTargets(): Observable<Target[]> {
+    return of(TARGETS);
   }
 }

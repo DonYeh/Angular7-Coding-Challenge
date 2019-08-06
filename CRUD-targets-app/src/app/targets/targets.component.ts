@@ -17,7 +17,9 @@ export class TargetsComponent implements OnInit {
   }
 
   getTargets(): void {
-    this.targets = this.targetService.getTargets();
+    this.targetService
+      .getTargets()
+      .subscribe(targets => (this.targets = targets));
   }
 
   constructor(private targetService: TargetService) {}
