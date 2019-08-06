@@ -34,4 +34,8 @@ export class TargetDetailComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
+
+  save(): void {
+    this.targetService.updateTarget(this.target).subscribe(() => this.goBack());
+  }
 }

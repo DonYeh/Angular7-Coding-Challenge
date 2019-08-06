@@ -43,6 +43,14 @@ export class TargetService {
     );
   }
 
+  // updates the target on the "server"
+  updateTarget(target: Target): Observable<any> {
+    return this.http.put(this.targetsUrl, target, this.httpOptions).pipe(
+      tap(_ => this.log(`updated target id=${target.id}`)),
+      catchError(this.handleError<any>("updateTarget"))
+    );
+  }
+
   /** Log a HeroService message with the MessageService */
   private log(message: string) {
     this.messageService.add(`TargetService: ${message}`);
