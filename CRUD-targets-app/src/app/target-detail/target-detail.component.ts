@@ -25,9 +25,9 @@ export class TargetDetailComponent implements OnInit {
   }
 
   getTarget(): void {
-    const id = this.route.snapshot.paramMap.get("companyName");
+    const id = +this.route.snapshot.paramMap.get("id");
     this.targetService
-      .getTarget(companyName)
+      .getTarget(id)
       .subscribe(target => (this.target = target));
   }
 

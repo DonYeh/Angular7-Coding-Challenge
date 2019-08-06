@@ -2,6 +2,7 @@ import { Target } from "./target";
 
 export const TARGETS: Target[] = [
   {
+    id: 1,
     acquisitionStatus: "researching",
     industry: "Capital Goods",
     companyName: "Emmerich, Hand and Wisozk",
@@ -16,6 +17,7 @@ export const TARGETS: Target[] = [
     valuation: 3.27
   },
   {
+    id: 2,
     acquisitionStatus: "approved",
     industry: "Manufacturing",
     companyName: "Johns-Hamill",
@@ -30,6 +32,7 @@ export const TARGETS: Target[] = [
     valuation: 93.02
   },
   {
+    id: 3,
     acquisitionStatus: "researching",
     industry: "Finance",
     companyName: "Dicki, Ortiz and Hahn",
@@ -44,6 +47,7 @@ export const TARGETS: Target[] = [
     valuation: 4.11
   },
   {
+    id: 4,
     acquisitionStatus: "pending approval",
     industry: "Manufacturing",
     companyName: "Moore, Konopelski and Kovacek",
@@ -58,6 +62,7 @@ export const TARGETS: Target[] = [
     valuation: 434.22
   },
   {
+    id: 5,
     acquisitionStatus: "researching",
     industry: "Health Care",
     companyName: "Goyette-Stehr",
@@ -72,6 +77,7 @@ export const TARGETS: Target[] = [
     valuation: 11.27
   },
   {
+    id: 6,
     acquisitionStatus: "researching",
     industry: "Health Care",
     companyName: "Jacobi-Effertz",
@@ -86,6 +92,7 @@ export const TARGETS: Target[] = [
     valuation: 103.1
   },
   {
+    id: 7,
     acquisitionStatus: "researching",
     industry: "Capital Goods",
     companyName: "Halvorson LLC",
@@ -100,6 +107,7 @@ export const TARGETS: Target[] = [
     valuation: 9.66
   },
   {
+    id: 8,
     acquisitionStatus: "approved",
     industry: "Consumer Services",
     companyName: "Boyle, Rau and Hudson",
@@ -114,6 +122,7 @@ export const TARGETS: Target[] = [
     valuation: 16.58
   },
   {
+    id: 9,
     acquisitionStatus: "pending approval",
     industry: "Finance",
     companyName: "Lubowitz and Sons",
@@ -128,6 +137,7 @@ export const TARGETS: Target[] = [
     valuation: 6.19
   },
   {
+    id: 10,
     acquisitionStatus: "declined",
     industry: "Public Utilities",
     companyName: "Powlowski, Boehm and Veum",
@@ -142,6 +152,7 @@ export const TARGETS: Target[] = [
     valuation: 1.64
   },
   {
+    id: 11,
     acquisitionStatus: "pending approval",
     industry: "Finance",
     companyName: "Kunde, Brown and Rowe",
@@ -156,6 +167,7 @@ export const TARGETS: Target[] = [
     valuation: 666.52
   },
   {
+    id: 12,
     acquisitionStatus: "pending approval",
     industry: "Health Care",
     companyName: "Dietrich, Ledner and Grant",
@@ -170,6 +182,7 @@ export const TARGETS: Target[] = [
     valuation: 38.16
   },
   {
+    id: 13,
     acquisitionStatus: "approved",
     industry: "Manufacturing",
     companyName: "Heller Inc",
@@ -184,6 +197,7 @@ export const TARGETS: Target[] = [
     valuation: 61.57
   },
   {
+    id: 14,
     acquisitionStatus: "declined",
     industry: "Public Utilities",
     companyName: "Brown LLC",
@@ -198,6 +212,7 @@ export const TARGETS: Target[] = [
     valuation: 3.49
   },
   {
+    id: 15,
     acquisitionStatus: "pending approval",
     industry: "Energy",
     companyName: "Schowalter, Bosco and Fahey",
@@ -212,6 +227,7 @@ export const TARGETS: Target[] = [
     valuation: 39.11
   },
   {
+    id: 16,
     acquisitionStatus: "declined",
     industry: "Consumer Services",
     companyName: "Cruickshank-Koepp",
@@ -226,6 +242,7 @@ export const TARGETS: Target[] = [
     valuation: 1.78
   },
   {
+    id: 17,
     acquisitionStatus: "approved",
     industry: "Consumer Durables",
     companyName: "Koch-Schroeder",
@@ -240,6 +257,7 @@ export const TARGETS: Target[] = [
     valuation: 1.51
   },
   {
+    id: 18,
     acquisitionStatus: "declined",
     industry: "Basic Industries",
     companyName: "Nicolas LLC",
@@ -254,6 +272,7 @@ export const TARGETS: Target[] = [
     valuation: 1.44
   },
   {
+    id: 19,
     acquisitionStatus: "pending approval",
     industry: "Capital Goods",
     companyName: "Welch Inc",
@@ -268,6 +287,7 @@ export const TARGETS: Target[] = [
     valuation: 15.8
   },
   {
+    id: 20,
     acquisitionStatus: "researching",
     industry: "Finance",
     companyName: "Jones Group",
@@ -282,6 +302,7 @@ export const TARGETS: Target[] = [
     valuation: 71.3
   },
   {
+    id: 21,
     acquisitionStatus: "pending approval",
     industry: "Finance",
     companyName: "Adams-Walter",
@@ -296,6 +317,7 @@ export const TARGETS: Target[] = [
     valuation: 3.07
   },
   {
+    id: 22,
     acquisitionStatus: "researching",
     industry: "Health Care",
     companyName: "Schinner, Lang and Kris",
@@ -310,6 +332,7 @@ export const TARGETS: Target[] = [
     valuation: 1.54
   },
   {
+    id: 23,
     acquisitionStatus: "researching",
     industry: "Consumer Services",
     companyName: "Ullrich-Rogahn",
@@ -324,6 +347,7 @@ export const TARGETS: Target[] = [
     valuation: 5.04
   },
   {
+    id: 24,
     acquisitionStatus: "approved",
     industry: "Capital Goods",
     companyName: "Hamill, Dach and Hoeger",
@@ -338,6 +362,7 @@ export const TARGETS: Target[] = [
     valuation: 45.14
   },
   {
+    id: 25,
     acquisitionStatus: "declined",
     industry: "Finance",
     companyName: "Hills-Balistreri",
@@ -352,6 +377,7 @@ export const TARGETS: Target[] = [
     valuation: 34.76
   },
   {
+    id: 26,
     acquisitionStatus: "declined",
     industry: "Manufacturing",
     companyName: "Toy-Baumbach",
@@ -366,6 +392,7 @@ export const TARGETS: Target[] = [
     valuation: 3.87
   },
   {
+    id: 27,
     acquisitionStatus: "pending approval",
     industry: "Transportation",
     companyName: "Bailey LLC",
@@ -380,6 +407,7 @@ export const TARGETS: Target[] = [
     valuation: 4.18
   },
   {
+    id: 28,
     acquisitionStatus: "pending approval",
     industry: "Consumer Services",
     companyName: "Gutmann-Mertz",
@@ -394,6 +422,7 @@ export const TARGETS: Target[] = [
     valuation: 3.5
   },
   {
+    id: 29,
     acquisitionStatus: "approved",
     industry: "Consumer Non-Durables",
     companyName: "Powlowski-Reichel",
@@ -408,6 +437,7 @@ export const TARGETS: Target[] = [
     valuation: 7.24
   },
   {
+    id: 30,
     acquisitionStatus: "researching",
     industry: "Finance",
     companyName: "O'Keefe-Heathcote",
@@ -422,6 +452,7 @@ export const TARGETS: Target[] = [
     valuation: 114.75
   },
   {
+    id: 31,
     acquisitionStatus: "approved",
     industry: "Manufacturing",
     companyName: "Morar-Hahn",
@@ -436,6 +467,7 @@ export const TARGETS: Target[] = [
     valuation: 180.01
   },
   {
+    id: 32,
     acquisitionStatus: "declined",
     industry: "Health Care",
     companyName: "Ferry-Gleason",
@@ -450,6 +482,7 @@ export const TARGETS: Target[] = [
     valuation: 23.56
   },
   {
+    id: 33,
     acquisitionStatus: "researching",
     industry: "Technology",
     companyName: "Tillman and Sons",
@@ -464,6 +497,7 @@ export const TARGETS: Target[] = [
     valuation: 814.69
   },
   {
+    id: 34,
     acquisitionStatus: "approved",
     industry: "Capital Goods",
     companyName: "Lang-Champlin",
@@ -478,6 +512,7 @@ export const TARGETS: Target[] = [
     valuation: 4.61
   },
   {
+    id: 35,
     acquisitionStatus: "approved",
     industry: "Technology",
     companyName: "Satterfield, Prosacco and Mayer",
@@ -492,6 +527,7 @@ export const TARGETS: Target[] = [
     valuation: 15.62
   },
   {
+    id: 36,
     acquisitionStatus: "declined",
     industry: "Technology",
     companyName: "Rutherford-Tremblay",
@@ -506,6 +542,7 @@ export const TARGETS: Target[] = [
     valuation: 2.67
   },
   {
+    id: 37,
     acquisitionStatus: "declined",
     industry: "Manufacturing",
     companyName: "Beer, Reichert and Bechtelar",
@@ -520,6 +557,7 @@ export const TARGETS: Target[] = [
     valuation: 19.56
   },
   {
+    id: 38,
     acquisitionStatus: "pending approval",
     industry: "Health Care",
     companyName: "Cormier Group",
@@ -534,6 +572,7 @@ export const TARGETS: Target[] = [
     valuation: 3.31
   },
   {
+    id: 39,
     acquisitionStatus: "pending approval",
     industry: "Manufacturing",
     companyName: "Sauer, Pollich and Padberg",
@@ -548,6 +587,7 @@ export const TARGETS: Target[] = [
     valuation: 30.4
   },
   {
+    id: 40,
     acquisitionStatus: "declined",
     industry: "Manufacturing",
     companyName: "Strosin, Kassulke and Koepp",
@@ -562,6 +602,7 @@ export const TARGETS: Target[] = [
     valuation: 22.2
   },
   {
+    id: 41,
     acquisitionStatus: "researching",
     industry: "Basic Industries",
     companyName: "Olson-Bednar",
@@ -576,6 +617,7 @@ export const TARGETS: Target[] = [
     valuation: 63.24
   },
   {
+    id: 42,
     acquisitionStatus: "researching",
     industry: "Energy",
     companyName: "Kuphal, Goldner and Kuhic",
@@ -590,6 +632,7 @@ export const TARGETS: Target[] = [
     valuation: 664.71
   },
   {
+    id: 43,
     acquisitionStatus: "approved",
     industry: "Capital Goods",
     companyName: "Roberts, McCullough and D'Amore",
@@ -604,6 +647,7 @@ export const TARGETS: Target[] = [
     valuation: 610.36
   },
   {
+    id: 44,
     acquisitionStatus: "pending approval",
     industry: "Finance",
     companyName: "Ankunding-Frami",

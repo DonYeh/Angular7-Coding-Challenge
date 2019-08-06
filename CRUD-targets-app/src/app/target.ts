@@ -1,4 +1,5 @@
 export class Target {
+  id: number;
   acquisitionStatus: string;
   industry: string;
   companyName: string;

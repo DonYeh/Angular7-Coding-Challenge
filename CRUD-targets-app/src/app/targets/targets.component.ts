@@ -1,7 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 // import { TARGETS } from "../mock-company-data";
 import { Target } from "../target";
-
 import { TargetService } from "../target.service";
 @Component({
   selector: "app-targets",
