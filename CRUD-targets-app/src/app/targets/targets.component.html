@@ -25,7 +25,7 @@
 <ul class="targets">
   <li *ngFor="let target of targets">
     <a routerLink="/detail/{{ target.id }}">
-      <span class="badge">{{ target.acquisitionStatus }}</span>
+      <span class="badge">{{ target.id }}</span>
       {{ target.companyName }}
     </a>
   </li>

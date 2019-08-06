@@ -2,6 +2,21 @@ import { Target } from "./target";
 
 export const TARGETS: Target[] = [
   {
+    id: 0,
+    acquisitionStatus: "researching",
+    industry: "Electronics",
+    companyName: "Champ Lexington",
+    companyAddress: "7663 Parklake Street",
+    companySize: 863,
+    ceo: "Margaret Chinchharni",
+    cfo: "Sheverly Williamsons",
+    cto: "Tanner Brightside",
+    liquidity: 99,
+    profitability: 82,
+    growth: 96,
+    valuation: 94.61
+  },
+  {
     id: 1,
     acquisitionStatus: "researching",
     industry: "Capital Goods",

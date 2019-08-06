@@ -7,7 +7,7 @@ import { TargetsComponent } from "./targets/targets.component";
 const routes: Routes = [
   { path: "", redirectTo: "/dashboard", pathMatch: "full" },
   { path: "dashboard", component: DashboardComponent },
-  { path: "detail/:companyName", component: TargetDetailComponent },
+  { path: "detail/:id", component: TargetDetailComponent },
   { path: "targets", component: TargetsComponent }
 ];
 

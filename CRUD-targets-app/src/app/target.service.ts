@@ -30,15 +30,17 @@ export class TargetService {
   // gets targets from the server
   getTargets(): Observable<Target[]> {
     return this.http.get<Target[]>(this.targetsUrl).pipe(
-      tap(_ => this.log("fetched targets")),
+      tap(_ => this.log("fetched all targets")),
       catchError(this.handleError<Target[]>("getTargets", []))
     );
   }
 
   getTarget(id: number): Observable<Target> {
-    // TODO: send the message _after_ fetching the heroes
-    this.messageService.add(`TargetService: fetched target company ${id}`);
-    return of(TARGETS.find(target => target.id === id));
+    const url = `${this.targetsUrl}/${id}`;
+    return this.http.get<Target>(url).pipe(
+      tap(_ => this.log(`fetched target id=${id}`)),
+      catchError(this.handleError<Target>(`getTarget id=${id}`))
+    );
   }
 
   /** Log a HeroService message with the MessageService */
