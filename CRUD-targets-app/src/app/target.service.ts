@@ -12,7 +12,15 @@ export class TargetService {
 
   getTargets(): Observable<Target[]> {
     // TODO: send the message _after_ fetching the heroes
-    this.messageService.add("TargetService: fetched targets");
+    this.messageService.add(`TargetService: fetched target companies`);
     return of(TARGETS);
+  }
+
+  getTarget(companyName: string): Observable<Target> {
+    // TODO: send the message _after_ fetching the heroes
+    this.messageService.add(
+      `TargetService: fetched target company ${companyName}`
+    );
+    return of(TARGETS.find(target => target.companyName === companyName));
   }
 }

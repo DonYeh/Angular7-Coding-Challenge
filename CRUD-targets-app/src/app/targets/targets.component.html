@@ -1,4 +1,4 @@
-<ul class="targets">
+<!-- <ul class="targets">
   <li
     *ngFor="let target of targets"
     [class.selected]="target === selectedTarget"
@@ -8,7 +8,7 @@
   </li>
 </ul>
 
-<div *ngIf="selectedTarget">
+<!-- <div *ngIf="selectedTarget">
   <h2>{{ selectedTarget.name | uppercase }} Details</h2>
   <div><span>id: </span>{{ selectedHero.id }}</div>
   <div>
@@ -17,6 +17,16 @@
       <input [(ngModel)]="selectedTarget.companyName" placeholder="name" />
     </label>
   </div>
-</div>
+</div> -->
+<!-- 
+<app-target-detail [target]="selectedTarget"></app-target-detail> -->
 
-<!-- <app-target-detail [target]="selectedTarget"></app-target-detail> -->
+<h2>Company Targets</h2>
+<ul class="targets">
+  <li *ngFor="let target of targets">
+    <a routerLink="/detail/{{ target.companyName }}">
+      <span class="badge">{{ target.acquisitionStatus }}</span>
+      {{ target.companyName }}
+    </a>
+  </li>
+</ul>

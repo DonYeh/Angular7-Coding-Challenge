@@ -1,6 +1,11 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { Target } from "../target";
 
+import { ActivatedRoute } from "@angular/router";
+import { Location } from "@angular/common";
+
+import { TargetService } from "../target.service";
+
 @Component({
   selector: "app-target-detail",
   templateUrl: "./target-detail.component.html",
@@ -9,7 +14,24 @@ import { Target } from "../target";
 export class TargetDetailComponent implements OnInit {
   @Input() target: Target;
 
-  constructor() {}
+  constructor(
+    private route: ActivatedRoute,
+    private targetService: TargetService,
+    private location: Location
+  ) {}
 
-  ngOnInit() {}
+  ngOnInit(): void {
+    this.getTarget();
+  }
+
+  getTarget(): void {
+    const id = this.route.snapshot.paramMap.get("companyName");
+    this.targetService
+      .getTarget(companyName)
+      .subscribe(target => (this.target = target));
+  }
+
+  goBack(): void {
+    this.location.back();
+  }
 }

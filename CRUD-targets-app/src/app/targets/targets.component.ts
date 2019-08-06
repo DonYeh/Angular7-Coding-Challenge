@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { TARGETS } from "../mock-company-data";
+// import { TARGETS } from "../mock-company-data";
 import { Target } from "../target";
 
 import { TargetService } from "../target.service";
@@ -10,7 +10,6 @@ import { TargetService } from "../target.service";
 })
 export class TargetsComponent implements OnInit {
   targets: Target[];
-  selectedTarget: Target;
 
   constructor(private targetService: TargetService) {}
 
@@ -18,9 +17,9 @@ export class TargetsComponent implements OnInit {
     this.getTargets();
   }
 
-  onSelect(target: Target): void {
-    this.selectedTarget = target;
-  }
+  // onSelect(target: Target): void {
+  //   this.selectedTarget = target;
+  // }
 
   getTargets(): void {
     this.targetService

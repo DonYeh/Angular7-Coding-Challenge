@@ -6,9 +6,10 @@ import { AppComponent } from "./app.component";
 import { TargetsComponent } from "./targets/targets.component";
 import { TargetDetailComponent } from "./target-detail/target-detail.component";
 import { MessagesComponent } from './messages/messages.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
-  declarations: [AppComponent, TargetsComponent, TargetDetailComponent, MessagesComponent],
+  declarations: [AppComponent, TargetsComponent, TargetDetailComponent, MessagesComponent, DashboardComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
