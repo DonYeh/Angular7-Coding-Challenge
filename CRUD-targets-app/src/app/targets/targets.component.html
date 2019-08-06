@@ -1,1 +1,9 @@
-<p>targets works!</p>
+<ul class="targets">
+  <li
+    *ngFor="let target of targets"
+    [class.selected]="target === selectedTarget"
+    (click)="onSelect(target)"
+  >
+    <span class="badge">{{ target.companyName }}</span>
+  </li>
+</ul>
