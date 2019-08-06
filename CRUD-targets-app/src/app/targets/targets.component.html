@@ -22,21 +22,6 @@
 <app-target-detail [target]="selectedTarget"></app-target-detail> -->
 
 <h2>Company Targets</h2>
-<ul class="targets">
-  <li *ngFor="let target of targets">
-    <a routerLink="/detail/{{ target.id }}">
-      <span class="badge">{{ target.id }}</span>
-      {{ target.companyName }}
-    </a>
-    <button
-      class="delete"
-      title="delete target company"
-      (click)="delete(target)"
-    >
-      X
-    </button>
-  </li>
-</ul>
 
 <div>
   <label
@@ -49,3 +34,15 @@
     add
   </button>
 </div>
+
+<ul class="targets">
+  <li *ngFor="let target of targets">
+    <a routerLink="/detail/{{ target.id }}">
+      <span class="badge">{{ target.id }}</span>
+      {{ target.companyName }}
+    </a>
+    <button class="delete" title="delete target" (click)="delete(target)">
+      X
+    </button>
+  </li>
+</ul>

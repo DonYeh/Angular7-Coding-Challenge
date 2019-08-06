@@ -63,11 +63,13 @@ export class TargetService {
     );
   }
 
+  //TODO:
+  // deletes the target from the server
   deleteTarget(target: Target | number): Observable<Target> {
     const id = typeof target === "number" ? target : target.id;
-    const url = `{this.targetsUrl}/${id}`;
+    const url = `${this.targetsUrl}/${id}`;
     return this.http.delete<Target>(url, this.httpOptions).pipe(
-      tap(_ => this.log(`deleted target company id:${id}`)),
+      tap(_ => this.log(`deleted target company id=${id}`)),
       catchError(this.handleError<Target>("deleteTarget"))
     );
   }
