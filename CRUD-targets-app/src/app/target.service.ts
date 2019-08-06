@@ -63,6 +63,15 @@ export class TargetService {
     );
   }
 
+  deleteTarget(target: Target | number): Observable<Target> {
+    const id = typeof target === "number" ? target : target.id;
+    const url = `{this.targetsUrl}/${id}`;
+    return this.http.delete<Target>(url, this.httpOptions).pipe(
+      tap(_ => this.log(`deleted target company id:${id}`)),
+      catchError(this.handleError<Target>("deleteTarget"))
+    );
+  }
+
   /** Log a HeroService message with the MessageService */
   private log(message: string) {
     this.messageService.add(`TargetService: ${message}`);

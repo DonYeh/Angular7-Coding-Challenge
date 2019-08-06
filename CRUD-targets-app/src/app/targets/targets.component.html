@@ -28,6 +28,13 @@
       <span class="badge">{{ target.id }}</span>
       {{ target.companyName }}
     </a>
+    <button
+      class="delete"
+      title="delete target company"
+      (click)="delete(target)"
+    >
+      X
+    </button>
   </li>
 </ul>
 

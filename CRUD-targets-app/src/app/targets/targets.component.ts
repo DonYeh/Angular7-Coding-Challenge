@@ -26,13 +26,20 @@ export class TargetsComponent implements OnInit {
       .subscribe(targets => (this.targets = targets));
   }
 
-  add(name: string): void {
-    name = name.trim();
-    if (!name) {
+  add(companyName: string): void {
+    companyName = companyName.trim();
+    if (!companyName) {
       return;
     }
-    this.targetService.addTarget({ name } as Target).subscribe(target => {
-      this.targets.push(target);
-    });
+    this.targetService
+      .addTarget({ companyName } as Target)
+      .subscribe(target => {
+        this.targets.push(target);
+      });
+  }
+
+  delete(target: Target): void {
+    this.targets = this.targets.filter(t => t !== target);
+    this.targetService.deleteTarget(target).subscribe();
   }
 }
