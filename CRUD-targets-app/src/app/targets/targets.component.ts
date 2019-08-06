@@ -25,4 +25,14 @@ export class TargetsComponent implements OnInit {
       .getTargets()
       .subscribe(targets => (this.targets = targets));
   }
+
+  add(name: string): void {
+    name = name.trim();
+    if (!name) {
+      return;
+    }
+    this.targetService.addTarget({ name } as Target).subscribe(target => {
+      this.targets.push(target);
+    });
+  }
 }

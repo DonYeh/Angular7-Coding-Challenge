@@ -30,3 +30,15 @@
     </a>
   </li>
 </ul>
+
+<div>
+  <label
+    >Company name:
+    <input #targetName />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <!-- In response to a click event, call the component's click handler, add(), and then clear the input field so that it's ready for another name -->
+  <button (click)="add(targetName.value); targetName.value = ''">
+    add
+  </button>
+</div>

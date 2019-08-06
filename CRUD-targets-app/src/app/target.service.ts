@@ -43,6 +43,18 @@ export class TargetService {
     );
   }
 
+  /** POST: add a new hero to the server */
+  addTarget(target: Target): Observable<Target> {
+    return this.http
+      .post<Target>(this.targetsUrl, target, this.httpOptions)
+      .pipe(
+        tap((newTarget: Target) =>
+          this.log(`added target company w/ id=${newTarget.id}`)
+        ),
+        catchError(this.handleError<Target>("addTarget"))
+      );
+  }
+
   // updates the target on the "server"
   updateTarget(target: Target): Observable<any> {
     return this.http.put(this.targetsUrl, target, this.httpOptions).pipe(
