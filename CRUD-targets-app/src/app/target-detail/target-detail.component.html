@@ -15,15 +15,40 @@
 
 <button (click)="goBack()">go back</button>
 
-<div *ngIf="selectedTarget">
-  <h2>{{ selectedTarget.name | uppercase }} Details</h2>
+<div *ngIf="target">
+  <h2>{{ target.companyName | uppercase }} Details</h2>
   <div>
     <!-- <span>Acquisition Status: </span>{{ <selectedTarget.acquisitionStatus }} -->
   </div>
   <div>
-    <label
-      >name:
-      <input [(ngModel)]="selectedTarget.id" placeholder="name" />
+    <label>
+      name:
+      <input [(ngModel)]="target.companyName" placeholder="name" />
+    </label>
+    <label>
+      status:
+      <input
+        [(ngModel)]="target.acquisitionStatus"
+        placeholder="acquisition status"
+      />
+    </label>
+    <label>
+      industry:
+      <input [(ngModel)]="target.industry" placeholder="industry" />
+    </label>
+    <label>
+      profitability:
+      <input [(ngModel)]="target.profitability" placeholder="profitability" />
+    </label>
+    <label>
+      growth:
+      <input [(ngModel)]="target.growth" placeholder="growth" />
+    </label>
+    <label>
+      valuation:
+      <input [(ngModel)]="target.valuation" placeholder="valuation" />
     </label>
   </div>
+  <button (click)="goBack()">go back</button>
+  <button (click)="save()">save</button>
 </div>
