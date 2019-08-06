@@ -5,6 +5,12 @@
   </h1>
 </div>
 
-<app-targets></app-targets>
-<app-messages></app-messages>
+<nav>
+  <a routerLink="/targets">Targets</a>
+</nav>
+
 <router-outlet></router-outlet>
+
+<!-- <app-targets></app-targets> -->
+<!--// no longer needed because the app will only display the TargetsComponent when the user navigates to it-->
+<app-messages></app-messages>
