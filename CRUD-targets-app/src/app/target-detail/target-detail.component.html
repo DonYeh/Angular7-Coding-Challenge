@@ -1,1 +1,27 @@
-<p>target-detail works!</p>
+<!-- <p>target-detail workssss!</p> -->
+
+<!-- <div *ngIf="selectedTarget">
+  <h2>{{ selectedTarget.companyName | uppercase }} Details</h2>
+  <div>
+    <span>Acquisition Status: </span>{{ selectedTarget.acquisitionStatus }}
+  </div>
+  <div>
+    <label
+      >name:
+      <input [(ngModel)]="selectedTarget.companyName" placeholder="name" />
+    </label>
+  </div>
+</div> -->
+
+<div *ngIf="selectedTarget">
+  <h2>{{ selectedTarget.name | uppercase }} Details</h2>
+  <div>
+    <!-- <span>Acquisition Status: </span>{{ <selectedTarget.acquisitionStatus }} -->
+  </div>
+  <div>
+    <label
+      >name:
+      <input [(ngModel)]="selectedTarget.companyName" placeholder="name" />
+    </label>
+  </div>
+</div>

@@ -7,3 +7,16 @@
     <span class="badge">{{ target.companyName }}</span>
   </li>
 </ul>
+
+<div *ngIf="selectedTarget">
+  <h2>{{ selectedTarget.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{ selectedHero.id }}</div>
+  <div>
+    <label
+      >name:
+      <input [(ngModel)]="selectedTarget.companyName" placeholder="name" />
+    </label>
+  </div>
+</div>
+
+<!-- <app-target-detail [target]="selectedTarget"></app-target-detail> -->
