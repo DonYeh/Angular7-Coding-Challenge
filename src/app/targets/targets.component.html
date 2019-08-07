@@ -24,31 +24,31 @@
 <h2>Company Targets</h2>
 
 <div>
-  <span
-    >Company name:
-    <input #targetName placeholder=" ...search for company... " />
-  </span>
-  <!-- (click) passes input value to add() and then clears the input -->
-  <!-- In response to a click event, call the component's click handler, add(), and then clear the input field so that it's ready for another name -->
-  <button (click)="add(targetName.value); targetName.value = ''">
-    add
-  </button>
+	<span
+		>Company name:
+		<input #targetName id="add-box" placeholder=" < Add new company > " />
+	</span>
+	<!-- (click) passes input value to add() and then clears the input -->
+	<!-- In response to a click event, call the component's click handler, add(), and then clear the input field so that it's ready for another name -->
+	<button (click)="add(targetName.value); targetName.value = ''">
+		add
+	</button>
 </div>
 
 <ul class="targets">
-  <li *ngFor="let target of targets">
-    <a routerLink="/detail/{{ target.id }}">
-      <span class="badge">{{ target.id }}</span>
-      <span>
-        {{
-          target.companyName.length > 22
-            ? (target.companyName | slice: 0:22) + "..."
-            : target.companyName
-        }}
-      </span>
-    </a>
-    <button class="delete" title="delete target" (click)="delete(target)">
-      X
-    </button>
-  </li>
+	<li *ngFor="let target of targets">
+		<a routerLink="/detail/{{ target.id }}">
+			<span class="badge">{{ target.id }}</span>
+			<span>
+				{{
+					target.companyName.length > 22
+						? (target.companyName | slice: 0:22) + "..."
+						: target.companyName
+				}}
+			</span>
+		</a>
+		<button class="delete" title="delete target" (click)="delete(target)">
+			X
+		</button>
+	</li>
 </ul>

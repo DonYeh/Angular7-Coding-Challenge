@@ -1,18 +1,18 @@
 <div id="search-component">
-  <h4><label for="search-box">Target Search</label></h4>
-  <input
-    #searchBox
-    id="search-box"
-    (input)="search(searchBox.value)"
-    placeholder=" -- search for company -- "
-  />
+	<h4><label for="search-box">Target Search</label></h4>
+	<input
+		#searchBox
+		id="search-box"
+		(input)="search(searchBox.value)"
+		placeholder=" < search for company > "
+	/>
 
-  <ul class="search-result">
-    <!-- targets$ is an observable, not an array -->
-    <li *ngFor="let target of targets$ | async">
-      <a routerLink="/detail/{{ target.id }}">
-        {{ target.companyName }}
-      </a>
-    </li>
-  </ul>
+	<ul class="search-result">
+		<!-- targets$ is an observable, not an array -->
+		<li *ngFor="let target of targets$ | async">
+			<a routerLink="/detail/{{ target.id }}">
+				{{ target.companyName }}
+			</a>
+		</li>
+	</ul>
 </div>
