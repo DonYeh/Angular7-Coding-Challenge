@@ -13,42 +13,43 @@
   </div>
 </div> -->
 
-<button (click)="goBack()">go back</button>
-
 <div *ngIf="target">
-  <h2>{{ target.companyName | uppercase }} Details</h2>
-  <div>
-    <!-- <span>Acquisition Status: </span>{{ <selectedTarget.acquisitionStatus }} -->
-  </div>
-  <div>
-    <div>
-      name:
-      <input [(ngModel)]="target.companyName" placeholder="name" />
-    </div>
-    <div>
-      status:
-      <input
-        [(ngModel)]="target.acquisitionStatus"
-        placeholder="acquisition status"
-      />
-    </div>
-    <div>
-      industry:
-      <input [(ngModel)]="target.industry" placeholder="industry" />
-    </div>
-    <div>
-      profitability:
-      <input [(ngModel)]="target.profitability" placeholder="profitability" />
-    </div>
-    <div>
-      growth:
-      <input [(ngModel)]="target.growth" placeholder="growth" />
-    </div>
-    <div>
-      valuation:
-      <input [(ngModel)]="target.valuation" placeholder="valuation" />
-    </div>
-  </div>
-  <button (click)="goBack()">go back</button>
-  <button (click)="save()">save</button>
+	<h2>{{ target.companyName | uppercase }} Details</h2>
+	<div>
+		<!-- <span>Acquisition Status: </span>{{ <selectedTarget.acquisitionStatus }} -->
+	</div>
+	<div>
+		<div>
+			name:
+			<input [(ngModel)]="target.companyName" placeholder="name" />
+		</div>
+		<div>
+			status:
+			<input
+				[(ngModel)]="target.acquisitionStatus"
+				placeholder="acquisition status"
+			/>
+		</div>
+		<div>
+			industry:
+			<input [(ngModel)]="target.industry" placeholder="industry" />
+		</div>
+		<div>
+			profitability:
+			<input
+				[(ngModel)]="target.profitability"
+				placeholder="profitability"
+			/>
+		</div>
+		<div>
+			growth:
+			<input [(ngModel)]="target.growth" placeholder="growth" />
+		</div>
+		<div>
+			valuation:
+			<input [(ngModel)]="target.valuation" placeholder="valuation" />
+		</div>
+	</div>
+	<button (click)="goBack()">go back</button>
+	<button (click)="save()">save</button>
 </div>
