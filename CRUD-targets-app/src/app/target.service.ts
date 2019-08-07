@@ -43,6 +43,19 @@ export class TargetService {
     );
   }
 
+  //GET targets whose names contains the search term
+  searchTargets(term: string): Observable<Target[]> {
+    if (!term.trim()) {
+      return of([]);
+    }
+    return this.http
+      .get<Target[]>(`${this.targetsUrl}/?companyName=${term}`)
+      .pipe(
+        tap(_ => this.log(`found targets matching "${term}"`)),
+        catchError(this.handleError<Target[]>("searchTargets", []))
+      );
+  }
+
   /** POST: add a new hero to the server */
   addTarget(target: Target): Observable<Target> {
     return this.http

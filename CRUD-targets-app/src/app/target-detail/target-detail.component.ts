@@ -1,9 +1,9 @@
 import { Component, OnInit, Input } from "@angular/core";
-import { Target } from "../target";
 
 import { ActivatedRoute } from "@angular/router";
 import { Location } from "@angular/common";
 
+import { Target } from "../target";
 import { TargetService } from "../target.service";
 
 @Component({

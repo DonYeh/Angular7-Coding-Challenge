@@ -9,7 +9,8 @@ import { MessagesComponent } from "./messages/messages.component";
 import { DashboardComponent } from "./dashboard/dashboard.component";
 import { HttpClientModule } from "@angular/common/http";
 import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
-import { InMemoryDataService } from "./in-memory-data.service"; // simulates a data server
+import { InMemoryDataService } from "./in-memory-data.service";
+import { TargetSearchComponent } from "./target-search/target-search.component"; // simulates a data server
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { InMemoryDataService } from "./in-memory-data.service"; // simulates a d
     TargetsComponent,
     TargetDetailComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
+    TargetSearchComponent
   ],
   imports: [
     BrowserModule,
