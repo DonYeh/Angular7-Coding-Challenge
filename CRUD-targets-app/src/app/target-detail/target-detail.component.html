@@ -21,33 +21,33 @@
     <!-- <span>Acquisition Status: </span>{{ <selectedTarget.acquisitionStatus }} -->
   </div>
   <div>
-    <label>
+    <span>
       name:
       <input [(ngModel)]="target.companyName" placeholder="name" />
-    </label>
-    <label>
+    </span>
+    <span>
       status:
       <input
         [(ngModel)]="target.acquisitionStatus"
         placeholder="acquisition status"
       />
-    </label>
-    <label>
+    </span>
+    <div>
       industry:
       <input [(ngModel)]="target.industry" placeholder="industry" />
-    </label>
-    <label>
+    </div>
+    <div>
       profitability:
       <input [(ngModel)]="target.profitability" placeholder="profitability" />
-    </label>
-    <label>
+    </div>
+    <span>
       growth:
       <input [(ngModel)]="target.growth" placeholder="growth" />
-    </label>
-    <label>
+    </span>
+    <span>
       valuation:
       <input [(ngModel)]="target.valuation" placeholder="valuation" />
-    </label>
+    </span>
   </div>
   <button (click)="goBack()">go back</button>
   <button (click)="save()">save</button>

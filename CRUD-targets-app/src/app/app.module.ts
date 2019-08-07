@@ -11,6 +11,9 @@ import { HttpClientModule } from "@angular/common/http";
 import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
 import { InMemoryDataService } from "./in-memory-data.service";
 import { TargetSearchComponent } from "./target-search/target-search.component"; // simulates a data server
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MatButtonModule } from "@angular/material/button";
+import { MatCheckboxModule } from "@angular/material/checkbox";
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { TargetSearchComponent } from "./target-search/target-search.component";
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCheckboxModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
