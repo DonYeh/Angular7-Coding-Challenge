@@ -48,7 +48,8 @@
 button {
 	background-color: #eee;
 	border: none;
-	padding: 5px 10px;
+	padding: 5px 8px;
+	margin-left: 5px;
 	border-radius: 4px;
 	cursor: pointer;
 	cursor: hand;
@@ -66,7 +67,7 @@ button {
 }
 
 #add-box {
-	width: 250px;
+	width: 145px;
 	height: 20px;
 	background-color: #d0efff;
 }
