@@ -5,7 +5,7 @@ import { TargetService } from "../target.service";
 @Component({
   selector: "app-targets",
   templateUrl: "./targets.component.html",
-  styleUrls: ["./targets.component.css"]
+  styleUrls: ["./targets.component.scss"]
 })
 export class TargetsComponent implements OnInit {
   targets: Target[];

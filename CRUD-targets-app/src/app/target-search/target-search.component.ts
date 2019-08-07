@@ -9,7 +9,7 @@ import { TargetService } from "../target.service";
 @Component({
   selector: "app-target-search",
   templateUrl: "./target-search.component.html",
-  styleUrls: ["./target-search.component.css"]
+  styleUrls: ["./target-search.component.scss"]
 })
 export class TargetSearchComponent implements OnInit {
   targets$: Observable<Target[]>;
